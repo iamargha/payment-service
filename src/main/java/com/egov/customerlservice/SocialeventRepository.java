@@ -1,4 +1,4 @@
-package com.egov.socialservice;
+package com.egov.customerlservice;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

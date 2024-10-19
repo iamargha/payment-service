@@ -1,4 +1,4 @@
-package com.egov.socialservice;
+package com.egov.customerlservice;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

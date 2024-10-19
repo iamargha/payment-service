@@ -1,4 +1,4 @@
-package com.egov.socialservice;
+package com.egov.customerlservice;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
@@ -21,7 +21,6 @@ import reactor.core.publisher.Mono;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @Tag(name = "Social Service", description = "Social Service APIs")
@@ -34,16 +33,16 @@ public class MainRestController {
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
 
-    @Autowired
-    @Qualifier("webClient_2")
+    //@Autowired
+    //@Qualifier("webClient_2")
     WebClient webClient;
 
-    @Autowired
-    @Qualifier("webClient_3")
+    //@Autowired
+    //@Qualifier("webClient_3")
     WebClient webClient_obs;
 
-    @Autowired
-    @Qualifier("webClientRationService_1")
+    //@Autowired
+    //@Qualifier("webClientRationService_1")
     WebClient webClientRationService_1;
 
     @Autowired
@@ -263,6 +262,15 @@ public class MainRestController {
          Socialevent socialevent = socialeventRepository.findByCitizenid(citizen.getCitizenid());
          log.info("fetched the social event: "+socialevent+" for the citzen id: "+citizen.getCitizenid());
          return ResponseEntity.ok(socialevent);
+    }
+
+    @GetMapping("students")
+    public ResponseEntity<String> getStdentDetails()
+    {
+        log.info("Request Received from the SOCIAL-SERVICE");
+        // MAKE THE LOGIC MORE RELEVANT
+        log.info("Response sent back to SOCIAL_SERVICE from the RATION-SERVICE");
+        return ResponseEntity.ok("Student Details for Citizen with CitizenID: HGDF6734");
     }
 
 
