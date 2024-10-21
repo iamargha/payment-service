@@ -1,4 +1,4 @@
-package com.egov.customerlservice;
+package com.egov.orderservice;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

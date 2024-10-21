@@ -1,4 +1,4 @@
-package com.egov.customerlservice;
+package com.egov.orderservice;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -1,21 +1,20 @@
-package com.egov.customerlservice;
+package com.egov.orderservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
-import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ServletComponentScan
 //@ComponentScan(basePackages = "com")
-public class CustomerServiceApplication
+public class OrderServiceApplication
 {
 
     public static void main(String[] args)
     {
         //SpringApplication.run(CustomerServiceApplication.class, args);
 
-        SpringApplication application = new SpringApplication(CustomerServiceApplication.class);
+        SpringApplication application = new SpringApplication(OrderServiceApplication.class);
         // Set the active profile programmatically
         application.setAdditionalProfiles("dev");
         application.run(args);

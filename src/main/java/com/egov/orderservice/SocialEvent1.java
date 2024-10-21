@@ -1,4 +1,4 @@
-package com.egov.customerlservice;
+package com.egov.orderservice;
 
 import java.util.UUID;
 
@@ -30,5 +30,14 @@ public class SocialEvent1 {
 
     public void setService_name(String service_name) {
         this.service_name = service_name;
+    }
+
+    @Override
+    public String toString() {
+        return "SocialEvent1{" +
+                "service_name='" + service_name + '\'' +
+                ", type='" + type + '\'' +
+                ", userid=" + userid +
+                '}';
     }
 }

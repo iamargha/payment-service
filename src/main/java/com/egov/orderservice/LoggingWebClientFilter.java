@@ -1,4 +1,4 @@
-package com.egov.customerlservice;
+package com.egov.orderservice;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

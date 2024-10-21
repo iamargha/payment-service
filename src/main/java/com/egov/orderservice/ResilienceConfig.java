@@ -1,4 +1,4 @@
-package com.egov.customerlservice;
+package com.egov.orderservice;
 
 import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;
 import io.github.resilience4j.retry.RetryConfig;

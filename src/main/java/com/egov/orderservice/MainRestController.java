@@ -1,4 +1,4 @@
-package com.egov.customerlservice;
+package com.egov.orderservice;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
@@ -10,7 +10,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.retry.annotation.CircuitBreaker;
 import org.springframework.web.bind.annotation.*;
@@ -74,7 +73,7 @@ public class MainRestController {
            credential.setId(UUID.randomUUID());
            credential.setPassword(String.valueOf((int)(Math.random()*1000000)));
 
-           credentialRepository.save(credential);
+           //credentialRepository.save(credential);
            //redisTemplate.opsForValue().set(credential.getCitizenid().toString(), credential.getPassword());
 
             producer.pubSocialEvent_1("REGISTER",credential.getId());

@@ -1,4 +1,4 @@
-package com.egov.customerlservice;
+package com.egov.orderservice;
 
 import jakarta.persistence.*;
 import lombok.Data;

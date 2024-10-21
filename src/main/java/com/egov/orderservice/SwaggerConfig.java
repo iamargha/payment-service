@@ -1,4 +1,4 @@
-package com.egov.customerlservice;
+package com.egov.orderservice;
 
 
 import io.swagger.v3.oas.models.OpenAPI;
